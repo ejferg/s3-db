@@ -55,7 +55,7 @@ const _destroy = (dir, file, done) => {
 }
 
 const _list = (dir, done) => {
-  listItems(`${dir}/`, (err, data) => {
+  listItems(`${dir}`, (err, data) => {
     if (!err && data) {
       done(false, data)
     } else {
